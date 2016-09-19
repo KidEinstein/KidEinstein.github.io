@@ -1,7 +1,7 @@
 ---
 title: "Setting up Hadoop on a cluster"
 layout: post
-description: A guide to installing Hadoop 2.7.2
+description: A guide to setting up Hadoop 2.7.2
 author: anirudh
 blog: true
 tag:
