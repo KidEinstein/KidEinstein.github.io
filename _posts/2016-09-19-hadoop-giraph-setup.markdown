@@ -115,7 +115,7 @@ The `yarn-site.sh` file should be located at `~/hadoop/etc/hadoop/yarn-site.sh`.
 
 ### Configuring environment variables
 
-Edit your ~/.bashrc file, add the following lines at the end to setup up the environment variables needed by Hadoop.
+Edit your ~/.bashrc file, add the following lines at the end to setup up the environment variables needed by Hadoop. Do this on <span class="evidence">every machine</span> in the cluster.
 
 {% highlight shell %}
 export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
