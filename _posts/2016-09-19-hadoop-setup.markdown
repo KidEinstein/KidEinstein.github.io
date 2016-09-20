@@ -113,6 +113,16 @@ The `yarn-site.sh` file should be located at `~/hadoop/etc/hadoop/yarn-site.sh`.
 </configuration>
 {% endhighlight %}
 
+### Editing slaves file
+
+The `slaves` file should be located at `~/hadoop/etc/hadoop/slaves`. Replace the contents of the file with the DNS entries for your slaves as mentioned in `/etc/hosts`.
+
+{% highlight text %}
+slave1
+slave2
+slave3
+{% endhighlight %}
+
 ### Configuring environment variables
 
 Edit your ~/.bashrc file, add the following lines at the end to setup up the environment variables needed by Hadoop. Do this on <span class="evidence">every machine</span> in the cluster.
