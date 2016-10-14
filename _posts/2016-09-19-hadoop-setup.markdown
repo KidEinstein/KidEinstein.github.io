@@ -141,6 +141,14 @@ Now that we have all the configuration in place, we can copy the `hadoop` direct
 scp -r ~/hadoop/ username@slaveX:~
 {% endhighlight %}
 
+### Formatting the NameNode
+
+Before you start using HDFS, the NameNode, which contains the directory structure for the files stored in HDFS needs to be formatted. Use the following command to do it.
+
+{% highlight shell %}
+hadoop namenode -format
+{% endhighlight %}
+
 ## Get it up and running
 
 Run the following commands on your master node to start up HDFS and yarn
