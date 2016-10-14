@@ -146,7 +146,7 @@ scp -r ~/hadoop/ username@slaveX:~
 Before you start using HDFS, the NameNode, which contains the directory structure for the files stored in HDFS needs to be formatted. Use the following command to do it.
 
 {% highlight shell %}
-hadoop namenode -format
+hdfs namenode -format
 {% endhighlight %}
 
 ## Get it up and running
