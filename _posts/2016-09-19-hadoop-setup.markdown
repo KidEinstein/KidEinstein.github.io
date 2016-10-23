@@ -24,10 +24,10 @@ Do the following on each of your machines to get them ready to run Hadoop.
 Fetch the IP addresses of all the machines in your cluster, and add the addresses to the /etc/hosts file accordingly. Designate one machine as the master and the rest as slaves, name them accordingly.
 
 {% highlight text %}
-master 10.0.0.2
-slave1 10.0.0.3
-slave2 10.0.0.4
-slave3 10.0.0.5
+10.0.0.2 master
+10.0.0.3 slave1
+10.0.0.4 slave2
+10.0.0.5 slave3
 {% endhighlight %}
 
 
