@@ -76,7 +76,7 @@ export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
 
 ### Editing core-site.xml
 
-The `core-site.sh` file should be located at `~/hadoop/etc/hadoop/core-site.sh`. Open it in your favourite editor and add the `fs.defaultFS` property under inside the configuration tag, like so
+The `core-site.sh` file should be located at `~/hadoop/etc/hadoop/core-site.xml`. Open it in your favourite editor and add the `fs.defaultFS` property under inside the configuration tag, like so
 
 {% highlight xml %}
 <configuration>
@@ -89,7 +89,7 @@ The `core-site.sh` file should be located at `~/hadoop/etc/hadoop/core-site.sh`.
 
 ### Editing hdfs-site.xml
 
-The `hdfs-site.sh` file should be located at `~/hadoop/etc/hadoop/hdfs-site.sh`. Add the dfs.replication property to define the number of machines a file should be replicated to when being stored in HDFS. If using a single slave node, set it to 1, if using 2, set it to 2, for 3 or more slaves use the default replication of 3.
+The `hdfs-site.sh` file should be located at `~/hadoop/etc/hadoop/hdfs-site.xml`. Add the dfs.replication property to define the number of machines a file should be replicated to when being stored in HDFS. If using a single slave node, set it to 1, if using 2, set it to 2, for 3 or more slaves use the default replication of 3.
 
 {% highlight xml %}
 <configuration>
@@ -102,7 +102,7 @@ The `hdfs-site.sh` file should be located at `~/hadoop/etc/hadoop/hdfs-site.sh`.
 
 ### Editing yarn-site.xml
 
-The `yarn-site.sh` file should be located at `~/hadoop/etc/hadoop/yarn-site.sh`. Edit the yarn.resourcemanager.hostname property and set its value to `master`, the DNS entry in the hosts file for the master.
+The `yarn-site.sh` file should be located at `~/hadoop/etc/hadoop/yarn-site.xml`. Edit the yarn.resourcemanager.hostname property and set its value to `master`, the DNS entry in the hosts file for the master.
 
 {% highlight xml %}
 <configuration>
