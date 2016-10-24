@@ -82,7 +82,7 @@ The `core-site.sh` file should be located at `~/hadoop/etc/hadoop/core-site.xml`
 <configuration>
     <property>
         <name>fs.defaultFS</name>
-        <value>hdfs://localhost:9000</value>
+        <value>hdfs://master:9000</value>
     </property>
 </configuration>
 {% endhighlight %}
