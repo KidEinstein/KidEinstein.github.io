@@ -11,6 +11,7 @@ external-image: false
 picture: assets/images/profile.jpg
 
 url: http://ashekhawat.com
+
 # your url: http://USERNAME.github.io
 
 permalink: /:title/
@@ -35,11 +36,14 @@ disqus: ashekhawat
 # instagram: myinstagram
 # pinterest: mypinterest
 linkedin: anirudh-shekhawat
-# youtube: myyoutube
-# spotify: myspotify
+#youtube: myyoutube
+#spotify: myspotify
 github: KidEinstein
-# medium: medium
-# vimeo: myvimeo
+#stackoverflow: 7044681/mystackoverflow
+#quora: userquora
+#reddit: username
+#medium: medium
+#vimeo: myvimeo
 email: anirudhshekh@gmail.com
 
 authors:
