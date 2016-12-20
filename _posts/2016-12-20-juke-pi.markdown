@@ -1,0 +1,5 @@
+---
+title: "Juke Pi"
+externalLink: https://github.com/TechGeekMe/juke-pi
+projects: true
+---
