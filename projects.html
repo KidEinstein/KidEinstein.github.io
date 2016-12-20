@@ -3,7 +3,8 @@ layout: page
 title: Projects
 ---
 <section class="list">
-    {% for post in site.posts %}
+	{% assign posts = site.posts | sort: "title" %}
+    {% for post in posts %}
         {% if post.projects %}
             <div class="item {% if post.star %}star{% endif %}">
                 <a class="url" href="{% if post.externalLink %}{{ post.externalLink }}{% else %}{{ site.url }}{{ post.url }}{% endif %}">
