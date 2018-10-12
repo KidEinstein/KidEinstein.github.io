@@ -10,7 +10,7 @@ description: A blog about technology and stuff related
 external-image: false
 picture: assets/images/profile.jpg
 
-url: http://localhost:4000
+url: http://ashekhawat.com
 # your url: http://USERNAME.github.io
 
 permalink: /:title/
