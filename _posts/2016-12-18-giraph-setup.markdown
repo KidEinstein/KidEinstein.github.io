@@ -33,7 +33,7 @@ Now that we have cloned the Giraph repository, let's switch to the commit having
 
 {% highlight shell %}
 cd giraph
-git checkout 13b85590ff0d482702ee5dbfcd02ab57e17e24b4
+git checkout release-1.2
 {% endhighlight %}
 
 ### Modifying pom.xml
@@ -43,6 +43,28 @@ We would be building Giraph for Hadoop v2.7.2 with YARN support. Trying to compi
 {% highlight xml %}
 <munge.symbols>PURE_YARN</munge.symbols>
 {% endhighlight %}
+
+Under the `hadoop_yarn` profile, add the version tags to the `hadoop-common, hadoop-mapreduce-client-common, hadoop-mapreduce-client-core` dependencies.
+
+{% highlight xml %}
+<dependency>
+    <groupId>org.apache.hadoop</groupId>
+    <artifactId>hadoop-common</artifactId>
+    <version>${hadoop.version}</version>
+</dependency>
+<dependency>
+    <groupId>org.apache.hadoop</groupId>
+    <artifactId>hadoop-mapreduce-client-common</artifactId>
+    <version>${hadoop.version}</version>
+</dependency>
+<dependency>
+    <groupId>org.apache.hadoop</groupId>
+    <artifactId>hadoop-mapreduce-client-core</artifactId>
+    <version>${hadoop.version}</version>
+</dependency>
+{% endhighlight %}
+
+
 
 ### Building Giraph from source
 
